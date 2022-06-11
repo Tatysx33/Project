@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Score check</title>
+  </head>
+  <body>
+ <h1>Do you want to know if you have passed the course?</h1>
+<div id ="app">
+  <p>{{ saludar }}</p>
+</div>
+
+
+  <h2> Please type your exam grade in the blank space </h2>
+  <div id ="app2">
+    <p>{{ type }}</p>
+    <h3>fill in the blank</h3>
+    <p><input type="num" v-model="num"></p>
+    <p>{{num}}</p>
+    <button @click > accept </button>
+    <p v-if="num >= 70" > Congratulations! you have passed</p>
+    <p v-else >Sorry but you have lost the subject</p>
+
+</div>
+
+
+
+
+    <script type="text/javascript"src="vue.js"></script>
+    <script type="text/javascript"src="javaS.js"></script>
+  </body>
+</html>
